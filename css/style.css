@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    font-size: 16px;
+}
+* button {
+    border-radius: 10px;
+}
+html {
+    display: flex;
+    width: 1920px;
+    height: 969px;
+}
+@media (max-width: 760px){
+    html {
+        width:428px;
+    }
+}
+body {
+    background-color: #D6E4EF;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    width: 247px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width: 64px;
+    margin: 0;
+}
+.logo a {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 16px;
+}
+.main {
+    background-color: rgba(250, 250, 250, 0.7);
+    width: 502px;
+    height: 771px;
+    margin-top: 24px;
+    border-radius: 10px;
+}
+.top {
+    box-sizing: content-box;
+    width: 454px;
+    height: 269px;
+    padding-top: 24px;
+}
+#background {
+    width: 454px;
+    height: 215px;
+    border-radius: 10px;
+}
+#photo {
+    width: 104px;
+    height: 104px;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 54px;
+    right: 52px;
+}
+#name {
+    color: red;
+    font-weight: 600;
+}
+.top a {
+    font-size: 20px;
+    position: relative;
+    bottom: 70px;
+    right: 24px;
+}
+.login_form {
+    width: 422px;
+    height: 296px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    text-align: start;
+}
+.login_form > input {
+    width: 422px;
+    height: 56px;
+    border: 1px solid #C6D1DC;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.extra {
+    display: flex;
+    width: 422px;
+    height: 16px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.extra a {
+    margin: 0;
+    color: black;
+}
+.extra input{
+    margin-right: 5px;
+}
+#login {
+    background-color: #D90327;
+    color: white;
+    border: none;
+    display: block;
+    width: 422px;
+    height: 48px;
+    padding: 16px;
+}
+.not {
+    width: 422px;
+    height: 90px;
+}
+.not a {
+    display: block;
+    width: 422px;
+    height: 18px;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.not_button {
+    width: 422px;
+    display: flex;
+    justify-content: space-between;
+}
+.not button {
+    width: 199px;
+    height: 48px;
+}
+.not_button button:first-child {
+    background-color: #2F3D4C;
+    color: white;
+}
+.not button:last-child {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #D90327;
+    color: #D90327;
+}
