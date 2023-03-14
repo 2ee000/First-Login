@@ -140,6 +140,8 @@ body {
     text-align: center;
     justify-content: center;
     cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
     gap: 8px;
 }
 
@@ -236,5 +238,52 @@ body {
     color: #D90327;
 }
 @media all and (max-width: 760px) {
+    .app {
+        border-radius: 24px;
+        padding: 1px;
+        padding-top: 40px;
+        padding-bottom: 2px;
+        gap: 26px;
+    }
 
+    .login_wrraper {
+        width: 426px;
+        height: 794px;
+        padding: 16px;
+        gap: 32px;
+        box-shadow: none;
+    }
+
+    .background {
+        width: 394px;
+        height: 215px;
+    }
+
+    .profile {
+        right: 18px;
+    }
+
+    .welcome p {
+        font-size: 18px;
+        font-weight: 700;
+        left: 5px;
+        bottom: 12px;
+    }
+
+    .login_form {
+        width: 364px;
+    }
+
+    .not {
+        width: 364px;
+    }
+
+
+    .not button:first-child p{
+        display: none;
+    }
+
+    .not button:first-child::after {
+        content: "Other user login";
+    }
 }
