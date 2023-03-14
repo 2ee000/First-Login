@@ -25,12 +25,12 @@ body {
     gap: 24px;
 }
 
-.logo{
+.logo__image{
     width: 247px;
     height: 64px;
 }
 
-.login_wrraper {
+.login {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.4) 100%);
     box-shadow: 0px 25px 32px -32px #8DB4D3, 0px 52px 48px -32px #A3B7C7;
     display: flex;
@@ -42,7 +42,7 @@ body {
     gap: 20px;
 }
 
-.top_login {
+.login__wrapper {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -51,7 +51,7 @@ body {
     gap: 32px;
 }
 
-.top {
+.user {
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
@@ -59,12 +59,12 @@ body {
     gap: 34px;
 }
 
-.background {
+.user__cover {
     width: 454px;
     height: 215px;
 }
 
-.profile {
+.user__profile {
     width: 104px;
     height: 104px;
     border: 4px solid white;
@@ -74,14 +74,14 @@ body {
     right: 52px;
 }
 
-.welcome {
+.user__information {
     display: flex;
     height: 20px;
     font-size: 20px;
     width: 600;
 }
 
-.welcome p {
+.user__information p {
     font-size: 20px;
     position: relative;
     bottom: 10px;
@@ -91,25 +91,25 @@ body {
     
 }
 
-.name {
+.user__name {
     font-weight: 600;
     color: #D90327;
 }
 
-.login_form {
+.login-form {
     display: flex;
     width: 422px;
     flex-flow: column nowrap;
     gap: 24px;
 }
 
-.email, .password {
+.login__email, .login__password {
     display: flex;
     flex-flow: column nowrap;
     gap: 8px;
 }
 
-.email p, .password p {
+.login__email p, .login__password p {
     text-align: start;
     font-size: 16px;
     font-weight: 600;
@@ -117,7 +117,7 @@ body {
     font-style: normal;
 }
 
-.email input, .password input {
+.login__email input, .login__password input {
     width: 100%;
     padding: 16px;
     font-size: 16px;
@@ -149,12 +149,12 @@ body {
     display: none;
 }
 
-.extra input:checked + .custom_checkbox {
+.extra input:checked + .extra__custom--checkbox {
     background-image: url(../img/checkbox.png);
     background-size: contain;
 }
 
-.custom_checkbox {
+.extra__custom--checkbox {
     width: 16px;
     height: 16px;
 
@@ -170,7 +170,7 @@ body {
     font-weight: 400;
 }
 
-.login_form button {
+.login__button {
     background-color: #D90327;
     border: none;
     border-radius: 8px;
@@ -189,27 +189,27 @@ body {
     height: 48px;
 }
 
-.not {
+.etc {
     display: flex;
     width: 422px;
     flex-flow: column nowrap;
     gap: 24px;
 }
 
-.not p {
+.etc p {
     font-size: 18px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
 }
 
-.not_button {
+.etc__button {
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 
-.not_button button {
+.etc__button button {
     width: 100%;
     padding: 16px;
     border-radius: 8px;
@@ -226,13 +226,13 @@ body {
     height: 48px;
 }
 
-.not_button button:first-child {
+.etc__button--dark {
     border: none;
     background-color: #2F3D4C;
     color: #FFFFFF;
 }
 
-.not_button button:last-child {
+.etc__button--red {
     border: 1px solid #D90327;
     background-color: rgba(255, 255, 255, 0);
     color: #D90327;
@@ -246,7 +246,7 @@ body {
         gap: 26px;
     }
 
-    .login_wrraper {
+    .login {
         width: 426px;
         height: 794px;
         padding: 16px;
@@ -254,36 +254,36 @@ body {
         box-shadow: none;
     }
 
-    .background {
+    .user__cover {
         width: 394px;
         height: 215px;
     }
 
-    .profile {
+    .user__profile {
         right: 18px;
     }
 
-    .welcome p {
+    .user__information p {
         font-size: 18px;
         font-weight: 700;
         left: 5px;
         bottom: 12px;
     }
 
-    .login_form {
+    .login-form {
         width: 364px;
     }
 
-    .not {
+    .etc {
         width: 364px;
     }
 
 
-    .not button:first-child p{
+    .etc__button--dark p{
         display: none;
     }
 
-    .not button:first-child::after {
+    .etc__button--dark::after {
         content: "Other user login";
     }
 }
